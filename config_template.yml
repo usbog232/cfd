@@ -3,17 +3,17 @@ credentials-file: /etc/cloudflared/${TUNNEL_ID}.json
 
 ingress:
   - hostname: n8n111.jdssl112.sbs
-    service: http://192.168.123.203:5678
+    service: http://192.168.123.23:5678
 
   - hostname: nas1111.jdssl112.sbs
-    service: https://192.168.123.50:5001
+    service: https://192.168.123.58:5001
     originRequest:
       noTLSVerify: true
 
   - hostname: ope222.jdssl112.sbs
-    service: http://192.168.123.3:80
+    service: http://192.168.123.8:80
 
   - hostname: jellyfin111.jdssl112.sbs
-    service: http://192.168.123.50:8096
+    service: http://192.168.123.58:8096
 
   - service: http_status:404
